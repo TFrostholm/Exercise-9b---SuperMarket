@@ -45,10 +45,21 @@ namespace Sandbox
             return description;
         }
 
+        
         public double GetTotalPrice()
         {
             double totalPrice = (numberOfApples * priceForOneApple) + (numberOfBananas * priceForOneBanana);
             return totalPrice;
+        }
+
+        public void NewBananaPrice(double newPrice)
+        {
+            priceForOneBanana = newPrice;
+        }
+
+        public void NewApplePrice(double newPrice)
+        {
+            priceForOneApple = newPrice;
         }
     }
 }
